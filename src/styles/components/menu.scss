@@ -1,0 +1,50 @@
+.menu {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    &--button {
+      border: none;
+      background-color: transparent;
+    }
+    &--arrow {
+      color: rgb(221, 188, 0);
+      left: 25px;
+      font-size: 25px;
+      margin-left: 5vw;
+    }
+    &--arrow:hover {
+      color: grey;
+    }
+  }
+  &__buttons {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 5vw;
+    &--list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    &--item {
+      list-style: none;
+    }
+    &--button {
+      margin-right: 5vw;
+      text-transform: uppercase;
+      color: rgb(221, 188, 0);
+      font-weight: bolder;
+      background-color: transparent;
+      border: none;
+
+      font-size: 20px;
+    }
+    &--button:hover {
+      color: grey;
+    }
+  }
+}

@@ -1,21 +1,52 @@
-.landing{
-    width: 100vw;
-    height: 80vh;
-    background-color: rgb(29, 29, 29);
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/books.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__section {
+    background-color: rgba(255, 255, 255, 0.384);
+    width: 50vw;
+    height: 70vh;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &__title{
-        text-transform: uppercase;
-        margin-bottom: 50px;
-        color:white;
+    &--icon {
+      color: gold;
+      margin-bottom: 10vh;
+      font-size: 100px;
     }
-    &__button{
-        text-transform: uppercase;
-        width: 500px;
-        height: 100px;
-        border:none;
-        background-color: #D4AF37;
+    &--title {
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      color: rgb(0, 0, 0);
+      font-family: 'Roboto', sans-serif;
+      font-size: 50px;
+      font-weight: bolder;
     }
+    &--button {
+      width: 30vw;
+      height: 10vh;
+      border: none;
+      background-color: gold;
+    }
+    &--button:hover {
+      background-color: #867200;
+      color: gold;
+    }
+    &--link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 30px;
+      color: black;
+      font-weight: bolder;
+    }
+  }
 }

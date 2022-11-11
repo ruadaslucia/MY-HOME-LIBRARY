@@ -1,18 +1,21 @@
-
-import'../styles/layouts/landing.scss';
-import Header from "./Header";
-import Footer from "./Footer";
+import '../styles/layouts/landing.scss';
+import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
     <>
-    <Header/>
-    <div className='landing'>      
-      <h2 className='landing__title'>my home books</h2>
-      <button className='landing__button'>descubre mi colección</button>      
-    </div>
-    <Footer/></>
+      <div className="landing">
+        <section className="landing__section">
+          <i className="fa-regular fa-bookmark landing__section--icon"></i>
+          <h2 className="landing__section--title">my home books</h2>
+          <button className="landing__section--button">
+            <Link className="landing__section--link" to="/central">
+              start
+            </Link>
+          </button>
+        </section>
+      </div>
+    </>
   );
 }
-
 export default Landing;
